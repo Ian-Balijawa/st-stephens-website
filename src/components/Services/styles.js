@@ -4,7 +4,7 @@ const styles = {
   container: {
     display: "flex",
     fontFamily: variables.fonts.$primaryFont,
-    margin: "60px 20px"
+    padding: "60px 20px"
   },
   imageContainer: {
     width: "50%",
