@@ -1,15 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles";
-import glamorous from "glamorous";
-const { Div, H1, H2, Button } = glamorous;
 
 const Hero = ({ title1, title2, linkText }) => (
-  <Div style={styles.container}>
-    <H1 style={styles.title1}>{title1}</H1>
-    <H2 style={styles.title2}>{title2}</H2>
-    {linkText ? <Button style={styles.button}>{linkText}</Button> : null}
-  </Div>
+  <div className={styles.container}>
+    <h1 className={styles.title1}>{title1}</h1>
+    <h2 className={styles.title2}>{title2}</h2>
+    {linkText ? <button className={styles.button}>{linkText}</button> : null}
+  </div>
 );
 
 Hero.propTypes = {

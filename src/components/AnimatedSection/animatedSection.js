@@ -1,19 +1,6 @@
 import React, { Component } from "react";
 import { animatePathDrawing } from "./canvasUtils";
-
-// can't use glamourous as need the width and height of the element
-const backgroundStyle = {
-  background: `linear-gradient(180deg, #fff, #F0FEFF)`,
-  height: "100%",
-  position: "relative"
-};
-
-const canvasStyle = {
-  position: "absolute",
-  pointerEvents: "none",
-  height: "100%",
-  width: "100%"
-};
+import styles from "./styles";
 
 class AnimatedBackground extends Component {
   state = {
@@ -42,11 +29,11 @@ class AnimatedBackground extends Component {
         ref="canvas"
         width={this.state.width}
         height={this.state.height}
-        style={canvasStyle}
+        className={styles.canvasStyle}
       />
     ) : null;
     return (
-      <div ref="view" style={backgroundStyle}>
+      <div ref="view" className={styles.backgroundStyle}>
         {canvas}
         {this.props.children}
       </div>

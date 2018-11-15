@@ -1,9 +1,8 @@
-import glamorous from "glamorous";
 import React from "react";
+import styles from "./styles";
 
-const LinkText = glamorous.p({
-  ":hover": {
-    color: "purple"
-  }
-});
-export const Link = ({ text, link }) => <LinkText link={link}>{text}</LinkText>;
+export const Link = ({ text, link }) => (
+  <p className={styles.link} link={link}>
+    {text}
+  </p>
+);

@@ -1,19 +1,20 @@
 import variables from "../../config/style-variables";
+import { css } from "emotion";
 
 const styles = {
-  container: {
-    display: "flex",
-    maxWidth: variables.size.smallContent,
-    margin: "0 auto",
-    justifyContent: "space-between"
-  },
-  title: {
-    fontFamily: variables.fonts.$primaryFont,
-    color: "#AD1EA4"
-  },
-  info: {
-    fontFamily: variables.fonts.$primaryFont
-  }
+  container: css`
+    display: flex;
+    max-width: ${variables.size.smallContent};
+    margin: 0 auto;
+    justify-content: space-between;
+  `,
+  title: css`
+    font-family: ${variables.fonts.$primaryFont};
+    color: #ad1ea4;
+  `,
+  info: css`
+    font-family: ${variables.fonts.$primaryFont};
+  `
 };
 
 export default styles;

@@ -5,6 +5,9 @@ const styles = {
   size: {
     mainContent: "1080px",
     smallContent: "800px"
+  },
+  colors: {
+    purple: "purple"
   }
 };
 

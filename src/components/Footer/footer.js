@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles";
-import { Div, H3, Footer } from "glamorous";
 import { Link } from "../Link";
 
 const links = [
@@ -27,22 +26,23 @@ const links = [
   }
 ];
 
-const PageFooter = () => (
-  <Footer style={styles.footer}>
-    <Div style={styles.container}>
+const Footer = () => (
+  <footer className={styles.footer}>
+    <div className={styles.container}>
       {links.map(section => (
         <div key={section.header}>
-          <H3>{section.header}</H3>
+          <h3>{section.header}</h3>
           {section.links.map(link => (
             <Link text={link.text} link={link.link} key={link.text} />
           ))}
         </div>
       ))}
-    </Div>
-  </Footer>
+    </div>
+  </footer>
 );
 
 Footer.propTypes = {
   links: PropTypes.array
 };
-export default PageFooter;
+
+export default Footer;
