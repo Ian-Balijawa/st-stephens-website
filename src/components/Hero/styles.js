@@ -22,6 +22,16 @@ const styles = {
     fontSize: 57,
     margin: 0,
     fontFamily: variables.fonts.$primaryFont
+  },
+  button: {
+    fontFamily: variables.fonts.$primaryFont,
+    fontSize: 24,
+    background: "#15C0D4",
+    color: "#fff",
+    border: "solid 2px #15C0D4",
+    marginTop: 50,
+    borderRadius: 30,
+    padding: "10px 20px"
   }
 };
 
