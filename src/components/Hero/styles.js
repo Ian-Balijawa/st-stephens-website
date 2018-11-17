@@ -1,4 +1,3 @@
-import variables from "../../config/style-variables";
 import image from "../../assets/MaskGroup2.jpg";
 import { css } from "emotion";
 

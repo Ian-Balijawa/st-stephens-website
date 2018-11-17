@@ -1,4 +1,3 @@
-import variables from "../../config/style-variables";
 import { css } from "emotion";
 
 const styles = {

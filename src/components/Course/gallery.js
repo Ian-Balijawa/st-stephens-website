@@ -14,7 +14,7 @@ const Gallery = ({ projects }) => (
 
 const ProjectView = ({ project }) => (
   <div className={styles.gallery.project}>
-    <img src={require(`../../assets/${project.src}`)} />
+    <img src={require(`../../assets/${project.src}`)} alt={project.title} />
   </div>
 );
 

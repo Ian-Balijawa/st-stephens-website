@@ -7,6 +7,7 @@ const Card = ({ text, title, subTitle, imgSrc }) => (
     <div className={styles.card.content}>
       {imgSrc ? (
         <img
+          alt={title}
           className={styles.card.image}
           src={require(`../../assets/${imgSrc}`)}
         />
