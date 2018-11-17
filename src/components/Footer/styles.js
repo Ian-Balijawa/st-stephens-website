@@ -3,7 +3,6 @@ import { css } from "emotion";
 
 const styles = {
   container: css`
-    font-family: ${variables.fonts.$primaryFont};
     max-width: 1080px;
     margin: 0 auto;
     display: flex;

@@ -4,7 +4,6 @@ import { css } from "emotion";
 const styles = {
   container: css`
     display: flex;
-    font-family: ${variables.fonts.$primaryFont};
     padding: 60px 20px;
   `,
   imageContainer: css`

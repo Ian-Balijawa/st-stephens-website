@@ -13,7 +13,7 @@ const Card = ({ text, title, subTitle, imgSrc }) => (
       ) : null}
       <div>
         {subTitle ? <h2 className={styles.card.title}>{subTitle}</h2> : null}
-        <p className={styles.card.text}>{text}</p>
+        <p>{text}</p>
       </div>
     </div>
   </div>

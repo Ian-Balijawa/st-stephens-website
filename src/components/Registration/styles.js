@@ -3,7 +3,6 @@ import variables from "../../config/style-variables";
 
 const styles = {
   container: css`
-    font-family: ${variables.fonts.$primaryFont};
     position: relative;
     padding: 80px;
     background: url(${require("../../assets/jean-philippe-delberghe.jpg")});
@@ -39,7 +38,6 @@ const styles = {
     textarea {
       min-width: 200px;
       margin-left: 12px;
-      font-family: ${variables.fonts.$primaryFont};
       color: white;
       border: 0;
       outline: 0;

@@ -11,12 +11,10 @@ const styles = {
       border-bottom: solid 1px #000;
     `,
     title: css`
-      font-family: ${variables.fonts.$primaryFont};
       color: ${variables.colors.pink};
       font-weight: bold;
     `,
     info: css`
-      font-family: ${variables.fonts.$primaryFont};
       font-size: ${variables.fonts.$headerSize};
     `
   },
@@ -29,11 +27,7 @@ const styles = {
       box-shadow: 2px 3px 26px 4px #eee;
     `,
     title: css`
-      font-family: ${variables.fonts.$primaryFont};
       font-size: ${variables.fonts.headerSize};
-    `,
-    text: css`
-      font-family: ${variables.fonts.$primaryFont};
     `,
     image: css`
       width: 30%;
@@ -47,7 +41,6 @@ const styles = {
   },
   gallery: {
     title: css`
-      font-family: ${variables.fonts.$primaryFont};
       font-size: ${variables.fonts.headerSize};
     `,
     container: css`

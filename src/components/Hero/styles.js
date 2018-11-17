@@ -22,15 +22,12 @@ const styles = {
   title1: css`
     font-size: 292px;
     margin: 0;
-    font-family: ${variables.fonts.$primaryFont};
   `,
   title2: css`
     font-size: 57px;
     margin: 0;
-    font-family: ${variables.fonts.$primaryFont};
   `,
   button: css`
-    font-family: ${variables.fonts.$primaryFont};
     font-size: 24px;
     background: #15c0d4;
     color: #fff;
