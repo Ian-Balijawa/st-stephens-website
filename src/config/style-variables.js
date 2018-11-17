@@ -1,13 +1,15 @@
 const styles = {
   fonts: {
-    $primaryFont: "Raleway"
+    $primaryFont: "Raleway",
+    $headerSize: "21px"
   },
   size: {
     mainContent: "1080px",
     smallContent: "800px"
   },
   colors: {
-    purple: "purple"
+    purple: "#8000FF",
+    pink: "#ad1ea4"
   }
 };
 
