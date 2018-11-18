@@ -1,4 +1,5 @@
 import { css } from "emotion";
+import variables from "../../config/style-variables";
 
 const styles = {
   backgroundStyle: css`
@@ -6,6 +7,11 @@ const styles = {
     height: 100%;
     position: relative;
     z-index: -1;
+  `,
+  container: css`
+    padding: 30px;
+    max-width: ${variables.size.mainContent};
+    margin: 0 auto;
   `,
   canvasStyle: css`
     position: absolute;

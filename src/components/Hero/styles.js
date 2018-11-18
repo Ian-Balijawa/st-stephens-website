@@ -34,6 +34,9 @@ const styles = {
     margin-top: 50px;
     border-radius: 30px;
     padding: 10px 20px;
+  `,
+  heroText: css`
+    font-size: 120px;
   `
 };
 

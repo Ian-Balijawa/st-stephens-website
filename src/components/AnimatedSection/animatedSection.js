@@ -35,7 +35,7 @@ class AnimatedBackground extends Component {
     return (
       <div ref="view" className={styles.backgroundStyle}>
         {canvas}
-        {this.props.children}
+        <div className={styles.container}>{this.props.children}</div>
       </div>
     );
   }

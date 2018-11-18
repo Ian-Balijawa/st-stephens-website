@@ -5,7 +5,7 @@ import posed from "react-pose";
 
 const Nav = posed.nav({
   open: {
-    delayChildren: 200,
+    delayChildren: 0,
     staggerChildren: 250,
     staggerDirection: -1
   }
@@ -51,9 +51,13 @@ class Navigation extends Component {
               Home
             </Link>
           </LinkItem>
-          <LinkItem className={styles.navAbout} linkName={"about"}>
-            <Link onClick={this.toggleMenu} className={styles.link} to="/">
-              About
+          <LinkItem className={styles.navAbout} linkName={"seminars"}>
+            <Link
+              onClick={this.toggleMenu}
+              className={styles.link}
+              to="/seminars"
+            >
+              Seminars
             </Link>
           </LinkItem>
           <LinkItem className={styles.navContact} linkName={"contact"}>

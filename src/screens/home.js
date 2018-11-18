@@ -1,7 +1,6 @@
 import React from "react";
 import { Hero } from "../components/Hero";
 import { ServicesList } from "../components/Services";
-import { Footer } from "../components/Footer";
 import { AnimatedSection } from "../components/AnimatedSection";
 
 const services = [
@@ -37,7 +36,6 @@ const Home = () => (
     <AnimatedSection>
       <ServicesList items={services} />
     </AnimatedSection>
-    <Footer />
   </div>
 );
 

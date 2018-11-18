@@ -1,6 +1,5 @@
 import React from "react";
 import { Hero } from "../components/Hero";
-import { Footer } from "../components/Footer";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { Summary, Card, Gallery } from "../components/Course";
 import { Registration } from "../components/Registration";
@@ -49,7 +48,6 @@ const Graphic = () => (
       </div>
     </AnimatedSection>
     <Registration />
-    <Footer />
   </div>
 );
 
