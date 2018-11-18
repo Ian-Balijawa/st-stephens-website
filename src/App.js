@@ -16,7 +16,7 @@ const globalStyling = css`
 const AppRouter = () => (
   <Router>
     <div className={globalStyling}>
-      <Navigation />
+      <Route path="/" component={Navigation} />
       <Route path="/" exact component={Home} />
       <Route path="/graphic" exact component={Graphic} />
       <Route path="/seminars" exact component={Seminars} />
