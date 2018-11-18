@@ -2,7 +2,7 @@ import React from "react";
 import { Hero } from "../components/Hero";
 import { ServicesList } from "../components/Services";
 import { AnimatedSection } from "../components/AnimatedSection";
-
+import image from "../assets/MaskGroup2.jpg";
 const services = [
   {
     title: "Interior Design",
@@ -32,7 +32,7 @@ const services = [
 
 const Home = () => (
   <div className="home">
-    <Hero title1="Design" title2="School" />
+    <Hero title1="Design" title2="School" image={image} />
     <AnimatedSection>
       <ServicesList items={services} />
     </AnimatedSection>

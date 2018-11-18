@@ -1,7 +1,8 @@
 import variables from "../../config/style-variables";
 import { css } from "emotion";
 import homeImg from "../../assets/MaskGroup2.jpg";
-import aboutImg from "../../assets/jean-philippe-delberghe.jpg";
+import seminarImg from "../../assets/jean-philippe-delberghe.jpg";
+import courseImg from "../../assets/john-jennings.jpg";
 
 const styles = {
   menuLink: css`
@@ -30,10 +31,10 @@ const styles = {
         rgba(35, 0, 255, 0.2),
         rgba(35, 0, 255, 0.5)
       ),
-      url(${homeImg}) center no-repeat;
+      url(${homeImg}) top left no-repeat;
     align-items: center;
   `,
-  navAbout: css`
+  navSeminar: css`
     background: red;
     grid-column: 2 / 4;
     background: linear-gradient(
@@ -41,23 +42,36 @@ const styles = {
         rgba(0, 247, 255, 0.6),
         rgba(0, 247, 255, 0.8)
       ),
-      url(${aboutImg}) center no-repeat;
+      url(${seminarImg}) center no-repeat;
     align-items: center;
   `,
   navContact: css`
-    background: purple;
+    background: linear-gradient(
+        0deg,
+        rgba(220, 23, 23, 0.2),
+        rgba(220, 23, 23, 0.5)
+      ),
+      url(${homeImg}) top left no-repeat;
+    align-items: center;
     align-items: center;
   `,
   navCourses: css`
-    background: blue;
+    background: linear-gradient(
+        0deg,
+        rgba(241, 241, 30, 0.3),
+        rgba(241, 241, 30, 0.5)
+      ),
+      url(${courseImg}) center no-repeat;
+    align-items: center;
     grid-column: 1 / 3;
     grid-row: 2;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 25%;
+    color: black;
   `,
   link: css`
-    color: white;
+    color: inherit;
     font-weight: bold;
     font-size: 54px;
     text-decoration: none;

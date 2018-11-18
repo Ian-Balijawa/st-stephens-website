@@ -9,7 +9,8 @@ const styles = {
   },
   colors: {
     purple: "#8000FF",
-    pink: "#ad1ea4"
+    pink: "#ad1ea4",
+    yellow: "#F1F11E"
   }
 };
 

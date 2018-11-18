@@ -4,6 +4,7 @@ import { AnimatedSection } from "../components/AnimatedSection";
 import { Summary, Card, Gallery } from "../components/Course";
 import { Registration } from "../components/Registration";
 import { css } from "emotion";
+import image from "../assets/john-jennings.jpg";
 
 const summaryItems = [
   { title: "start", info: "april 14th" },
@@ -34,7 +35,7 @@ const teacherCard = {
 
 const Graphic = () => (
   <div>
-    <Hero title1="Graphic" title2="Design" linkText="Register" />
+    <Hero title1="Graphic" title2="Design" linkText="Register" image={image} />
     <AnimatedSection>
       <div
         className={css`

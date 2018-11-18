@@ -1,13 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles";
+import styled from "react-emotion";
 
-const Hero = ({ title1, title2, linkText }) => (
-  <div className={styles.container}>
+const Container = styled("div")(
+  props =>
+    `
+    background: linear-gradient(
+        0deg,
+        rgba(35, 0, 255, 0.2),
+        rgba(35, 0, 255, 0.5)
+      ),
+      url(${props.image}) center no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  `
+);
+
+const Hero = ({ title1, title2, linkText, image }) => (
+  <Container image={image}>
     <h1 className={styles.title1}>{title1}</h1>
     <h2 className={styles.title2}>{title2}</h2>
     {linkText ? <button className={styles.button}>{linkText}</button> : null}
-  </div>
+  </Container>
 );
 
 Hero.propTypes = {
