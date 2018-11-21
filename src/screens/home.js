@@ -31,7 +31,7 @@ const services = [
 ];
 
 const Home = () => (
-  <div className="home">
+  <div>
     <Hero title1="Design" title2="School" image={image} />
     <AnimatedSection>
       <ServicesList items={services} />

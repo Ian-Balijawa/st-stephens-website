@@ -19,6 +19,7 @@ const styles = {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    z-index: 3;
     color: white;
     div {
       display: flex;

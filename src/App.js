@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./screens/home";
 import Graphic from "./screens/graphic";
+import Contact from "./screens/contact";
 import Seminars from "./screens/seminars";
 import { Footer } from "./components/Footer";
 
@@ -20,6 +21,8 @@ const AppRouter = () => (
       <Route path="/" exact component={Home} />
       <Route path="/graphic" exact component={Graphic} />
       <Route path="/seminars" exact component={Seminars} />
+      <Route path="/seminars" exact component={Seminars} />
+      <Route path="/contact" exact component={Contact} />
       <Footer />
     </div>
   </Router>

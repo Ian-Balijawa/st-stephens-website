@@ -7,6 +7,10 @@ const styles = {
     padding: 80px;
     background: url(${require("../../assets/jean-philippe-delberghe.jpg")});
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
     &:before {
       content: "";
       position: absolute;

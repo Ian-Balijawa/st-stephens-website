@@ -37,7 +37,7 @@ class Navigation extends Component {
 
   state = {
     isOpen: false,
-    theme: this.props.location.pathName === "/seminars" ? "dark" : "light"
+    theme: this.props.location.pathname === "/seminars" ? "light" : "dark"
   };
 
   menuClicked(theme) {
@@ -92,7 +92,7 @@ class Navigation extends Component {
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
-              to="/"
+              to="/contact"
             >
               Contact
             </Link>

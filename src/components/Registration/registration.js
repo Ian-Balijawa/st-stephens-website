@@ -4,7 +4,13 @@ import styles from "./styles";
 class Registration extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", message: "", successMessage: false };
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+      successMessage: false,
+      full: this.props.full
+    };
   }
 
   handleSubmit = e => {
@@ -65,9 +71,9 @@ class Registration extends React.Component {
   };
 
   render() {
-    const { successMessage } = this.state;
+    const { successMessage, full } = this.state;
     return (
-      <div className={styles.container}>
+      <div className={styles.container} style={full ? { height: "100vh" } : {}}>
         <h1 className={styles.title}>Registration</h1>
         {successMessage ? <p>tada</p> : this.renderForm()}
       </div>
