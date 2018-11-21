@@ -23,7 +23,6 @@ const AppRouter = () => (
       <Route path="/" exact component={Home} />
       <Route path="/graphic" exact component={Graphic} />
       <Route path="/seminars" exact component={Seminars} />
-      <Route path="/seminars" exact component={Seminars} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/fashion" exact component={Fashion} />
       <Route path="/interior" exact component={Interior} />
