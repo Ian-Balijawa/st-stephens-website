@@ -3,6 +3,8 @@ import Home from "./screens/home";
 import Graphic from "./screens/graphic";
 import Contact from "./screens/contact";
 import Seminars from "./screens/seminars";
+import Fashion from "./screens/fashion";
+import Interior from "./screens/interior";
 import { Footer } from "./components/Footer";
 
 import { Navigation } from "./components/Navigation";
@@ -23,6 +25,8 @@ const AppRouter = () => (
       <Route path="/seminars" exact component={Seminars} />
       <Route path="/seminars" exact component={Seminars} />
       <Route path="/contact" exact component={Contact} />
+      <Route path="/fashion" exact component={Fashion} />
+      <Route path="/interior" exact component={Interior} />
       <Footer />
     </div>
   </Router>

@@ -102,14 +102,14 @@ class Navigation extends Component {
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
-              to="/"
+              to="/fashion"
             >
               Fashion
             </Link>
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
-              to="/"
+              to="/interior"
             >
               Interior
             </Link>
