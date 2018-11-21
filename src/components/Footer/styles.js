@@ -10,6 +10,13 @@ const styles = {
   `,
   footer: css`
     border-top: solid 2px grey;
+  `,
+  text: css`
+  text-align: center;
+  padding: 20px;
+  a {
+    font-weight: bold;
+  }
   `
 };
 
