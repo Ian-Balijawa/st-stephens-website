@@ -3,6 +3,7 @@ import { css } from "emotion";
 import homeImg from "../../assets/MaskGroup2.jpg";
 import seminarImg from "../../assets/jean-philippe-delberghe.jpg";
 import courseImg from "../../assets/john-jennings.jpg";
+import {breakpoints, mediaQueries} from '../../config/media-queries';
 
 const styles = {
   menuLink: css`
@@ -10,23 +11,26 @@ const styles = {
     padding: 20px;
     color: white;
     z-index: 30;
-    font-size: ${variables.fonts.$headerSize};
+    ${variables.fonts.headerSize}
   `,
   nav: css`
     position: absolute;
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     z-index: 3;
     color: white;
     div {
       display: flex;
       justify-content: center;
     }
+    @media(min-width: ${breakpoints[2]}px){
+      grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
   `,
   navHome: css`
+  padding: 20px;
     background: linear-gradient(
         0deg,
         rgba(35, 0, 255, 0.2),
@@ -37,7 +41,6 @@ const styles = {
   `,
   navSeminar: css`
     background: red;
-    grid-column: 2 / 4;
     background: linear-gradient(
         0deg,
         rgba(0, 247, 255, 0.6),
@@ -45,6 +48,9 @@ const styles = {
       ),
       url(${seminarImg}) center no-repeat;
     align-items: center;
+    @media(min-width: ${breakpoints[2]}px){
+      grid-column: 2 / 4;
+    }
   `,
   navContact: css`
     background: linear-gradient(
@@ -64,8 +70,10 @@ const styles = {
       ),
       url(${courseImg}) center no-repeat;
     align-items: center;
-    grid-column: 1 / 3;
-    grid-row: 2;
+    @media(min-width: ${breakpoints[2]}px){
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
     flex-direction: column;
     align-items: flex-start;
     padding-left: 25%;
@@ -74,8 +82,11 @@ const styles = {
   link: css`
     color: inherit;
     font-weight: bold;
-    font-size: 54px;
     text-decoration: none;
+    ${mediaQueries({
+      fontSize: ["30px", "40px", "50px", "64px"]
+    })
+    }
   `
 };
 

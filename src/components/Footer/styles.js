@@ -1,12 +1,14 @@
 import { css } from "emotion";
+import styles from '../../config/style-variables';
 
-const styles = {
+export default {
   container: css`
-    max-width: 1080px;
+    max-width: ${styles.size.mainContent};
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
+    flex-wrap: wrap;
   `,
   footer: css`
     border-top: solid 2px grey;
@@ -19,5 +21,3 @@ const styles = {
   }
   `
 };
-
-export default styles;

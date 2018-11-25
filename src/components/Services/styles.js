@@ -1,13 +1,21 @@
 import { css } from "emotion";
+import {breakpoints} from '../../config/media-queries';
+import variables from "../../config/style-variables";
 
 const styles = {
   container: css`
     display: flex;
     padding: 60px 20px;
+    ${variables.fonts.paragraphSize}
   `,
   imageContainer: css`
     width: 50%;
     position: relative;
+    @media(max-width: ${breakpoints[1]}px){
+      width: 80%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
   `,
   image: css`
     width: 70%;
@@ -33,8 +41,8 @@ const styles = {
     padding: 20px;
   `,
   title: css`
-    font-size: 54px;
     font-weight: bold;
+    ${variables.fonts.titleSize}
   `,
   titleSpan: css`
     color: #ad1ea4;

@@ -2,9 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles";
 import styled from "react-emotion";
+import {breakpoints} from '../../config/media-queries';
+
+const mediaQuery = `@media(max-width: ${breakpoints[1]}px)`
 
 const ListItem = styled("div")(styles.container, ({ index }) => ({
-  flexDirection: index % 2 === 0 ? "row" : "row-reverse"
+  flexDirection: index % 2 === 0 ? "row" : "row-reverse",
+  [mediaQuery]: {
+    flexDirection: 'column'
+  }
 }));
 
 const BackgroundImg = styled("div")(

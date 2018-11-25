@@ -27,14 +27,10 @@ const MenuLink = styled("div")`
   color: ${({ theme, isOpen }) =>
     theme === "light" && !isOpen ? "black" : "white"};
   z-index: 30;
-  font-size: ${variables.fonts.$headerSize};
+  ${variables.fonts.headerSize}
 `;
 
 class Navigation extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   state = {
     isOpen: false,
     theme: this.props.location.pathname === "/seminars" ? "light" : "dark"

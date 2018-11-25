@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "emotion": "^9.2.12",
+    "facepaint": "^1.2.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-emotion": "^9.2.12",

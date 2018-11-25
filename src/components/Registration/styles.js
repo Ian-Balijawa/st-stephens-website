@@ -1,5 +1,6 @@
 import { css } from "emotion";
 import variables from "../../config/style-variables";
+import {breakpoints} from '../../config/media-queries';
 
 const styles = {
   container: css`
@@ -22,11 +23,14 @@ const styles = {
       opacity: 0.8;
       z-index: 1;
     }
+    @media(max-width: ${breakpoints[1]}px){
+      padding: 10px;
+    }
   `,
   form: css`
     position: relative;
     z-index: 2;
-    max-width: ${variables.size.smallContent};
+    ${variables.size.smallContent};
     margin: 0 auto;
     text-align: center;
     color: white;
@@ -36,11 +40,12 @@ const styles = {
       border-bottom: solid 2px white;
       width: fit-content;
       margin: 10px auto;
-      min-width: 300px;
+      @media(min-width: ${breakpoints[0]}px){
+        min-width: 300px;
+    }
     }
     input,
     textarea {
-      min-width: 200px;
       margin-left: 12px;
       color: white;
       border: 0;

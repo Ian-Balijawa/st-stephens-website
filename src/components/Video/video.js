@@ -4,16 +4,18 @@ import styles from "./styles";
 
 const Video = ({ url, title, date }) => (
   <div className={styles.container}>
-    <h2 className={styles.title}>{title}</h2>
-    <div className={styles.date}>
-      <p>date</p>
-      <p>{date}</p>
+  <div className={ styles.textContainer}>
+      <h2 className={styles.title}>{title}</h2>
+      <div className={styles.date}>
+        <p>date</p>
+        <p>{date}</p>
+      </div>
     </div>
     <iframe
       className={styles.iframe}
       width="100%"
-      height="500px"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      src={url}
+      title={title}
     />
   </div>
 );
