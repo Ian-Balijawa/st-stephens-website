@@ -37,8 +37,13 @@ const styles = {
     justify-content: center;
   `,
   linkText: css`
-    border-left: solid 5px;
     padding: 20px;
+    margin-right: 10px;
+    a {
+      color: black;
+      text-decoration: none !important;
+    }
+    
   `,
   title: css`
     font-weight: bold;

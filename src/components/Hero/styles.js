@@ -23,7 +23,10 @@ const styles = {
       })
     }
     background: #15c0d4;
-    color: #fff;
+    a{
+       color: #fff;
+       text-decoration: none;
+    }
     border: solid 2px #15c0d4;
     margin-top: 50px;
     border-radius: 30px;

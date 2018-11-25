@@ -3,10 +3,18 @@ import variables from "../../config/style-variables";
 
 const styles = {
   backgroundStyle: css`
-    background: linear-gradient(180deg, #fff, #f0feff);
-    height: 100%;
     position: relative;
-    z-index: -1;
+    &:before {
+      content: '';
+      z-index: 1;
+      background: linear-gradient(180deg, #fff, #f0feff);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
   `,
   container: css`
     padding: 30px;

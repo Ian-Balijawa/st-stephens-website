@@ -21,7 +21,22 @@ const BackgroundImg = styled("div")(
   })
 );
 const LinkText = styled("p")(styles.linkText, ({ color }) => ({
-  borderColor: `#${color}`
+  position: 'relative',
+  '&:hover:after': {
+    width: '100%'
+  },
+  '&:after': {
+    content: '""',
+    position: 'absolute',
+    top: 0, 
+    left: 0,
+    height: '100%',
+    width: '100%',
+    background: `#${color}`,
+    transition: '0.5s',
+    width: '3px',
+    zIndex: -1
+  }
 }));
 
 const ServicesItem = ({ item, index }) => {
@@ -40,7 +55,7 @@ const ServicesItem = ({ item, index }) => {
         </h1>
         <p>{text}</p>
         <div className={styles.link}>
-          <LinkText color={color}>register</LinkText>
+            <LinkText color={color}><a href='/contact'>register</a></LinkText>
         </div>
       </div>
     </ListItem>

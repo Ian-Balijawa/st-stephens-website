@@ -27,7 +27,7 @@ const Hero = ({ title1, title2, linkText, image }) => (
   <Container image={image}>
     <h1 className={styles.title1}>{title1}</h1>
     <h2 className={styles.title2}>{title2}</h2>
-    {linkText ? <button className={styles.button}>{linkText}</button> : null}
+    {linkText ? <button className={styles.button}><a href="/contact">{linkText}</a></button> : null}
   </Container>
 );
 
