@@ -2,7 +2,7 @@ import {mediaQueries} from './media-queries';
 
 const styles = {
   fonts: {
-    $primaryFont: "Raleway",
+    $primaryFont: "'Work Sans', sans-serif;",
     headerSize: mediaQueries({
       fontSize: ["18px", "18px", "21px", "26px"]
     }),
