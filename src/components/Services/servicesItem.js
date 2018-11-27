@@ -31,7 +31,6 @@ const LinkText = styled("p")(styles.linkText, ({ color }) => ({
     top: 0, 
     left: 0,
     height: '100%',
-    width: '100%',
     background: `#${color}`,
     transition: '0.5s',
     width: '3px',

@@ -65,7 +65,7 @@ class Navigation extends Component {
         >
           <p>{isOpen ? "Close" : "Menu"}</p>
         </MenuLink>
-        <Nav className={styles.nav} pose={isOpen ? "open" : "closed"}>
+        <Nav className={styles.nav} pose={isOpen ? "open" : "closed"} initialPose={'closed'}>
           <LinkItem className={styles.navHome} linkName={"home"}>
             <Link
               onClick={() => this.menuClicked("dark")}
