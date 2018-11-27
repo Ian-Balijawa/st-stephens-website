@@ -28,9 +28,9 @@ class Registration extends React.Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   renderForm = () => {
-    const { name, email, message } = this.state;
+    const { name, email, message} = this.state;
     return (
-      <form onSubmit={this.handleSubmit} className={styles.form}>
+      <form onSubmit={this.handleSubmit} className={styles.form} netlify="true">
         <p>
           <label>
             Name:{" "}
@@ -75,7 +75,7 @@ class Registration extends React.Component {
     return (
       <div className={styles.container} style={full ? { height: "100vh" } : {}}>
         <h1 className={styles.title}>Registration</h1>
-        {successMessage ? <p>tada</p> : this.renderForm()}
+        {successMessage ? <p className={styles.successMessage}>Thank you for getting in touch</p> : this.renderForm()}
       </div>
     );
   }

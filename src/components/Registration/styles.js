@@ -67,6 +67,11 @@ const styles = {
     color: white;
     text-align: center;
     position: relative;
+  `,
+  successMessage: css`
+    text-align: center;
+    color: white;
+    z-index: 2;
   `
 };
 
