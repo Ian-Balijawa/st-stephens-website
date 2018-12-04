@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./styles";
 import styled from "react-emotion";
 import {breakpoints} from '../../config/media-queries';
+import { Link } from "react-router-dom";
 
 const mediaQuery = `@media(max-width: ${breakpoints[1]}px)`
 
@@ -20,7 +21,7 @@ const BackgroundImg = styled("div")(
     background: `linear-gradient(0deg, ${gradient[0]}, ${gradient[1]})`
   })
 );
-const LinkText = styled("p")(styles.linkText, ({ color }) => ({
+const LinkText = styled('div')(styles.linkText, ({ color }) => ({
   position: 'relative',
   '&:hover:after': {
     width: '100%'
@@ -54,7 +55,7 @@ const ServicesItem = ({ item, index }) => {
         </h1>
         <p>{text}</p>
         <div className={styles.link}>
-            <LinkText color={color}><a href='/contact'>register</a></LinkText>
+            <LinkText color={color}><Link  to="/contact">register</Link></LinkText>
         </div>
       </div>
     </ListItem>

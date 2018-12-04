@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles";
 import styled from "react-emotion";
+import { Link } from "react-router-dom";
 
 const Container = styled("div")(
   props =>
@@ -27,7 +28,7 @@ const Hero = ({ title1, title2, linkText, image }) => (
   <Container image={image}>
     <h1 className={styles.title1}>{title1}</h1>
     <h2 className={styles.title2}>{title2}</h2>
-    {linkText ? <button className={styles.button}><a href="/contact">{linkText}</a></button> : null}
+    {linkText ? <button className={styles.button}><Link to='/contact'>{linkText}</Link></button> : null}
   </Container>
 );
 

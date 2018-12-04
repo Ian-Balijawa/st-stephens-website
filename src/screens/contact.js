@@ -1,10 +1,8 @@
 import React from "react";
 import { Registration } from "../components/Registration";
 
-const Home = () => (
-  <div>
+const Contact = () => (
     <Registration full={true} />
-  </div>
 );
 
-export default Home;
+export default Contact;
