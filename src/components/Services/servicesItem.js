@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Parallax from 'parallax-js';
 import styles from "./styles";
 import styled from "react-emotion";
 import {breakpoints} from '../../config/media-queries';
@@ -39,28 +40,53 @@ const LinkText = styled('div')(styles.linkText, ({ color }) => ({
   }
 }));
 
-const ServicesItem = ({ item, index }) => {
-  const { title, color, text, image, gradient } = item;
-  const titleArr = title.split(" ");
-  return (
-    <ListItem index={index}>
-      <div className={styles.imageContainer}>
-        <BackgroundImg index={index} gradient={gradient} />
-        <img src={image} alt={title} className={styles.image} />
-      </div>
-      <div className={styles.contentContainer}>
-        <h1 className={styles.title}>
-          <span className={styles.titleSpan}>{titleArr[0]} </span>
-          {titleArr[1]}
-        </h1>
-        <p>{text}</p>
-        <div className={styles.link}>
-            <LinkText color={color}><Link  to="/contact">register</Link></LinkText>
+class ServicesItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+
+  componentDidMount() {
+    var scene = this.myRef.current;
+    let options = {};
+    if(this.props.index % 2) {
+      options = {
+        invertX: false, 
+        invertY: false
+      }
+    }
+    this.parallax = new Parallax(scene, options);
+  }
+
+  componentWillUnmount() {
+    this.parallax.destroy();
+  }
+
+  render() {
+    const { title, color, text, image, gradient } = this.props.item;
+    const titleArr = title.split(" ");
+    return (
+      <ListItem index={this.props.index} >
+        <div className={styles.imageContainer} ref={this.myRef}>
+          <BackgroundImg index={this.props.index} gradient={gradient} data-depth="1.3"/>
+          <img src={image} alt={title} className={styles.image} />
         </div>
-      </div>
-    </ListItem>
-  );
-};
+        <div className={styles.contentContainer}>
+          <h1 className={styles.title} >
+            <span className={styles.titleSpan}>{titleArr[0]} </span>
+            {titleArr[1]}
+          </h1>
+          <p>{text}</p>
+          <div className={styles.link}>
+              <LinkText color={color}><Link  to="/contact">register</Link></LinkText>
+          </div>
+        </div>
+      </ListItem>
+    );
+  };
+  
+}
+
 
 ServicesItem.propTypes = {
   title: PropTypes.string,

@@ -30,8 +30,8 @@ const styles = {
     top: 5%;
   `,
   contentContainer: css`
-    padding: 20;
-    margin-left: 20;
+    padding: 20px;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
