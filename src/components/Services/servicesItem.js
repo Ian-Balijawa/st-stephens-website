@@ -5,7 +5,7 @@ import styles from "./styles";
 import styled from "react-emotion";
 import {breakpoints} from '../../config/media-queries';
 import { Link } from "react-router-dom";
-
+import variables from '../../config/style-variables';
 const mediaQuery = `@media(max-width: ${breakpoints[1]}px)`
 
 const ListItem = styled("div")(styles.container, ({ index }) => ({
@@ -24,6 +24,7 @@ const BackgroundImg = styled("div")(
 );
 const LinkText = styled('div')(styles.linkText, ({ color }) => ({
   position: 'relative',
+  color: `${variables.colors.grey};`,
   '&:hover:after': {
     width: '100%'
   },
@@ -77,9 +78,11 @@ class ServicesItem extends React.Component {
             {titleArr[1]}
           </h1>
           <p>{text}</p>
-          <div className={styles.link}>
-              <LinkText color={color}><Link  to="/contact">register</Link></LinkText>
-          </div>
+          <Link  to="/contact" style={{textDecoration: 'none'}}>
+            <div className={styles.link}>
+                <LinkText color={color}>register</LinkText>
+            </div>
+          </Link>
         </div>
       </ListItem>
     );

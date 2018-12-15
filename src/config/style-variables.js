@@ -25,7 +25,8 @@ const styles = {
   colors: {
     purple: "#8000FF",
     pink: "#ad1ea4",
-    yellow: "#F1F11E"
+    yellow: "#F1F11E",
+    grey: '#333'
   }
 };
 

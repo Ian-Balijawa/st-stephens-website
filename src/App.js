@@ -14,6 +14,7 @@ import variables from "./config/style-variables";
 
 const globalStyling = css`
   font-family: ${variables.fonts.$primaryFont};
+  color: ${variables.colors.grey};
 `;
 
 const AppRouter = () => (
