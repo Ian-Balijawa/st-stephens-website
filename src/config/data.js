@@ -1,35 +1,23 @@
 const summaryItems = [
-    { title: "start", info: "april 14th" },
-    { title: "duration", info: "3 months" },
-    { title: "parts", info: "24 lessons" },
-    { title: "projects", info: "6 projects" }
-  ];
+    { title: "performance", info: "No statistics yet" },
+    { title: "directions", info: "" },
+    { title: "reviews", info: "No reviews yet" },
+];
+  const aboutSchool ="St. Stephen’s College  Bajja is built on a catholic foundation but admits students of all faiths. It is a private school with a current ratio of 1:1.5 boys to girls. It offers both sciences and arts. The school, though on a catholic foundation, admits students of all faiths.The school has great teachers who are capable of inspiring other people and we encourage you to use this chance of educating your son or daughter at St. Stephen’s College Bajja. Teachers really care.",
   
-  const aboutCourse =
-    "You will learn fundamentals of interior design, tools and theories used to kickstart your career in this space you will learn fundamentals of interior design, tools and theories used to kickstart your career in this space interior design, tools and theories used to kickstart your career in this space you will learn fundamentals of interior design, tools and theories used to kickstart your career in this space fundamentals of interior design, tools and theories used to kickstart your career in this space interior design, tools and theories used to kickstart your career in this.";
+  const admissions = "The offices at the school and at Namuwongo are always open for registration of new students except on 22nd December to 2nd January. Our school fees structure is affordable. However we argue you to pay on time to avoid inconveniences.",
   
-  const projects = [
-    { title: "Galaxy project", src: "meteor-dribbble.jpg" },
-    { title: "Galaxy project1", src: "meteor-dribbble-1.jpg" },
-    { title: "Galaxy project2", src: "meteor-dribbble-2.jpg" },
-    { title: "Galaxy project3", src: "meteor-dribbble-3.jpg" },
-    { title: "Galaxy project4", src: "meteor-dribbble-4.jpg" },
-    { title: "Galaxy project5", src: "meteor-dribbble-5.jpg" }
-  ];
-  
-  const teacherCard = {
-    imgSrc: "undraw_teacher.svg",
+  const co-curricularActivities = {
+    imgSrc: "sports.jpg",
     text:
-      "You will learn fundamentals of interior design, tools and theories used to kickstart your career in this space you will learn fundamentals of interior design, tools and theories used to kickstart your career in this space interior design, tools and theories used to kickstart your career in this space",
-    title: "Your teacher",
-    subTitle: "Name Surname"
+      "The school has a variety of games and sports for the students to keep fit and they include; Football for both boys and girls, Netball, Volley ball for both boys and girls, Table Tennis, Scrabble, Chess and Athletics.",
   };
 
   const courseData = {
     summaryItems,
-    aboutCourse,
-    projects,
-    teacherCard
+    aboutSchool,
+    admissions,
+    co-curricularActivities
   }
 
 

@@ -33,7 +33,7 @@ const MenuLink = styled("div")`
 class Navigation extends Component {
   state = {
     isOpen: false,
-    theme: this.props.location.pathname === "/seminars" ? "light" : "dark"
+    theme: this.props.location.pathname === "/Graphics" ? "light" : "dark"
   };
 
   menuClicked(theme) {
@@ -66,7 +66,7 @@ class Navigation extends Component {
           <p>{isOpen ? "Close" : "Menu"}</p>
         </MenuLink>
         <Nav className={styles.nav} pose={isOpen ? "open" : "closed"} initialPose={'closed'}>
-          <LinkItem className={styles.navHome} linkName={"home"}>
+          <LinkItem clasme={styles.navHome} linkName={"home"}>
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
@@ -75,13 +75,13 @@ class Navigation extends Component {
               Home
             </Link>
           </LinkItem>
-          <LinkItem className={styles.navSeminar} linkName={"seminars"}>
+          <LinkItem className={styles.navGraphics} linkName={"Graphics"}>
             <Link
               onClick={() => this.menuClicked("light")}
               className={styles.link}
-              to="/seminars"
+              to="/Graphics"
             >
-              Seminars
+              Graphics
             </Link>
           </LinkItem>
           <LinkItem className={styles.navContact} linkName={"contact"}>
@@ -98,23 +98,23 @@ class Navigation extends Component {
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
-              to="/fashion"
+              to="/News"
             >
-              Fashion
+              News
             </Link>
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
-              to="/interior"
+              to="/Images"
             >
-              Interior
+              Images
             </Link>
             <Link
               onClick={() => this.menuClicked("dark")}
               className={styles.link}
-              to="/graphic"
+              to="/Videos"
             >
-              Graphics
+              Videos
             </Link>
           </LinkItem>
         </Nav>

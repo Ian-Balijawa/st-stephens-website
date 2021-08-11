@@ -26,7 +26,6 @@ function animatePathDrawing(ctx, lines, duration, width, height) {
     const delta = timestamp - start;
     const progress = Math.min(delta / duration, 1);
 
-    // Clear canvas
     ctx.clearRect(0, 0, width, height);
 
     // Draw curves

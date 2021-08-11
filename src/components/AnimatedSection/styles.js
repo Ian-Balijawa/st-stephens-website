@@ -7,7 +7,7 @@ const styles = {
     &:before {
       content: '';
       z-index: 1;
-      background: linear-gradient(180deg, #fff, #f0feff);
+      background: linear-gradient(180deg, #fff, white);
       position: absolute;
       top: 0;
       left: 0;
@@ -17,7 +17,7 @@ const styles = {
     }
   `,
   container: css`
-    padding: 30px;
+    padding: 40px;
     max-width: ${variables.size.mainContent};
     margin: 0 auto;
   `,

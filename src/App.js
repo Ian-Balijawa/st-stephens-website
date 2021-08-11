@@ -1,10 +1,9 @@
 import React from "react";
 import Home from "./screens/home";
-import Graphic from "./screens/graphic";
 import Contact from "./screens/contact";
-import Seminars from "./screens/seminars";
-import Fashion from "./screens/fashion";
-import Interior from "./screens/interior";
+import News from "./screens/News";
+import Images from "./screens/Images";
+import Videos from "./screens/Videos";
 import { Footer } from "./components/Footer";
 
 import { Navigation } from "./components/Navigation";
@@ -22,11 +21,10 @@ const AppRouter = () => (
     <div className={globalStyling}>
       <Route path="/" component={Navigation} />
       <Route path="/" exact component={Home} />
-      <Route path="/graphic" exact component={Graphic} />
-      <Route path="/seminars" exact component={Seminars} />
+      <Route path="/Videos" exact component={Videos} />
       <Route path="/contact" exact component={Contact} />
-      <Route path="/fashion" exact component={Fashion} />
-      <Route path="/interior" exact component={Interior} />
+      <Route path="/Images" exact component={Images} />
+      <Route path="/News" exact component={News} />
       <Footer />
     </div>
   </Router>

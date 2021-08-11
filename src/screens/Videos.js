@@ -3,7 +3,7 @@ import { AnimatedSection } from "../components/AnimatedSection";
 import { Video } from "../components/Video";
 import { HeroText } from "../components/Hero";
 
-const seminars = [
+const videos = [
   {
     title: "Theory on how to use the white space properly",
     date: "April 14th",
@@ -16,15 +16,15 @@ const seminars = [
   }
 ];
 
-const Seminars = () => (
+const Videos= () => (
   <div>
     <AnimatedSection>
-      <HeroText text={"Seminars"} />
-      {seminars.map(seminar => (
-        <Video {...seminar} key={seminar.title} />
+      <HeroText text={"Videos"} />
+      {Videos.map(Videos => (
+        <Video {...Videos} key={Videos.title} />
       ))}
     </AnimatedSection>
   </div>
 );
 
-export default Seminars;
+export default Videos;

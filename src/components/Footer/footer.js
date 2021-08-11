@@ -7,17 +7,19 @@ const links = [
   {
     header: "Courses",
     links: [
-      { text: "Interior", link: "#" },
-      { text: "Fashion", link: "#" },
-      { text: "Graphics", link: "#" }
+      { text: "Images", link: "#" },
+      { text: "News", link: "#" },
+      { text: "Videos", link: "/Videos" },
+
+
+    
     ]
   },
   {
     header: "Materials",
     links: [
-      { text: "Seminars", link: "/seminars" },
       { text: "Blog", link: "#" },
-      { text: "Freebeis", link: "#" }
+      { text: "Freebeis", link: "#" },
     ]
   },
   {
@@ -38,7 +40,6 @@ const Footer = () => (
         </div>
       ))}
     </div>
-    <p className={styles.text}>This is a fake site inspired by <a href="https://www.behance.net/gallery/62337989/Design-School-Landing-with-free-project-file">Farid Shukurov behance project</a> developed by <a href="https://www.louisemoxhay.co.uk">Louise Moxhay</a></p>
   </footer>
 );
 

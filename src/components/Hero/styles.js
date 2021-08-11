@@ -3,15 +3,15 @@ import {mediaQueries, breakpoints} from '../../config/media-queries';
 
 const styles = {
   title1: css`
-    margin: 0;
+    margin: 10;
     ${mediaQueries({
-      fontSize: ["70px", "20vw", "20vw", "250px"]
+      fontSize: ["40px", "20vw", "20vw", "150px"]
     })
     }
   `,
   title2: css`
     ${mediaQueries({
-      fontSize: ["40px", "8vw", "8vw", "120px"]
+      fontSize: ["40px", "20vw", "20vw", "150px"]
     })
   }
     margin: 0;
@@ -34,7 +34,7 @@ const styles = {
   `,
   heroText: css`
   @media(max-width: ${breakpoints[0]}px){
-        margin-top: 80px;
+        margin-top: 40px;
     }
     ${mediaQueries({
       fontSize: ["30px", "80px", "100px", "120px"]
