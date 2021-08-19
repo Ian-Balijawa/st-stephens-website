@@ -10,12 +10,7 @@ import styles from "./styles";
 
 const CoursePage = ({ pageTitle }) => (
 	<div>
-		<Hero
-			title1={pageTitle}
-			title2="Design"
-			linkText="Register"
-			image={image}
-		/>
+		<Hero title1={pageTitle} title2='Design' linkText='Register' image={image} />
 		<AnimatedSection>
 			<div className={styles.pageContainer}></div>
 		</AnimatedSection>

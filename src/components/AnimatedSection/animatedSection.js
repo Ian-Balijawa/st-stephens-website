@@ -7,7 +7,7 @@ class AnimatedBackground extends Component {
     height: null,
     width: null
   };
-
+  // lifecycle hook
   componentDidMount() {
     const view = this.refs.view;
     const ratio = window.devicePixelRatio || 1;

@@ -5,7 +5,7 @@ import { Link } from "../Link";
 
 const links = [
   {
-    header: "Courses",
+    header: "Tools",
     links: [
       { text: "Images", link: "#" },
       { text: "News", link: "#" },

@@ -6,7 +6,7 @@ const styles = {
   container: css`
     position: relative;
     padding: 80px;
-    background: url(${require("../../assets/jean-philippe-delberghe.jpg")});
+    background: url(${require("../../assets/resty1.jpg")});
     background-size: cover;
     display: flex;
     flex-direction: column;

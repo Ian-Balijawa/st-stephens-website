@@ -1,0 +1,15 @@
+.image__container {
+	display: flex;
+	margin-top: -5rem;
+	flex-direction: row;
+	/* justify-content: ; */
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.image__container > img {
+	width: 10rem;
+	margin: 0.5rem;
+	border-radius: 5px;
+	height: 10rem;
+}
